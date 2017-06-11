@@ -6,8 +6,14 @@ import { RouterModule }   from '@angular/router';
 import {InsertComponent} from './insert.component';
 import {DeleteComponent} from './delete.component';
 
+import {HttpModule} from '@angular/http';
+// Imports for loading & configuring the in-memory web api
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from './in-memory-data.service';
+
 @NgModule({
   imports:      [ BrowserModule,
+                HttpModule,
   RouterModule.forRoot([{
     path:"insert",
     component: InsertComponent

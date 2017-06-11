@@ -12,6 +12,7 @@ var app_component_1 = require("./app.component");
 var router_1 = require("@angular/router");
 var insert_component_1 = require("./insert.component");
 var delete_component_1 = require("./delete.component");
+var http_1 = require("@angular/http");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -20,6 +21,7 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule,
+            http_1.HttpModule,
             router_1.RouterModule.forRoot([{
                     path: "insert",
                     component: insert_component_1.InsertComponent
