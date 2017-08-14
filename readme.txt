@@ -1,4 +1,4 @@
-#mongo instalation 
+#mongodb instalation 
 1 - download and install in C:/
 2 - create: (use windows cmd)
 	C:\mongodb\data\db         //create dirs data and db
